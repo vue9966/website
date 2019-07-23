@@ -4,6 +4,9 @@ input{ border: none;background-color: #fff;}
 input:hover{ background-color: #fff; border: none }
 input:focus{ outline: none; }
 a {color:#fff; text-decoration:none; }
+.title-h1{color: #4acaa8}
+.title-p{ font-size: 32px;font-weight: bold;color: #777; }
+.line-20{ width: 100%;height: 5px;background-color: rgb(244, 244, 244) }
 /* flex-布局 */
 .flex{ display: flex; flex-wrap: wrap; }
 .f1{ flex: 1; }
