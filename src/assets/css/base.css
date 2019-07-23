@@ -1,0 +1,93 @@
+div, button, input{ box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; -webkit-tap-highlight-color: transparent; }
+input{ border: none;background-color: #fff;}
+input:hover{ background-color: #fff; border: none }
+input:focus{ outline: none; }
+/* flex-布局 */
+.flex{ display: flex; flex-wrap: wrap; }
+.f1{ flex: 1; }
+.f2{ flex: 2; }
+.f3{ flex: 3; }
+/* 垂直居中 */
+.fvertical{ align-items: center; }
+/* 水平居中 */
+.fcenter{ justify-content: center;  }
+/* 右对齐 */
+.fright{ flex-direction: row; justify-content: flex-end; }
+/* 左右对着 */
+.between{ justify-content: space-between; }
+
+/* 字体 */
+.st{ font-size: 44px; }
+.s1{ font-size: 32px; line-height: 32px; }
+.s2{ font-size: 28px; line-height: 28px; }
+.s3{ font-size: 24px; line-height: 24px; }
+.bold{ font-weight: bold; }
+
+
+.article-navg { padding-right: 10px;color: #999; }
+.theme-color{ color: #f13131; }
+.theme-bg{ background-color: #f13131; }
+
+.white{ color: #fff; }
+.black{ color: #333; }
+.red{ color: #ff0000; }
+.gray{ color: #999; }
+.blue{ color: #2196f3; }
+
+.color-8e{ color: #8e8e8e; }
+.color-4d{ color: #707473 }
+.b0-color{ color: #b0b0b0 }
+.color-9a{ color: #9a9a9a; }
+.color-8f{ color: #555 }
+.color-333{ color:#333 }
+.color-666{ color: #666; }
+.border_fafa{ border-bottom: 1px solid #fafafa }
+.line-ed{ width: 100%;height: 20px;background-color: #ededed; }
+.line-ed-min{ width: 100%;height: 10px;background-color: #ededed; }
+
+/* 文本超出... */
+.ellipsis{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ellipsis-2{ overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; }
+.ellipsis-3{ overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; }
+
+/* 卡片阴影 */
+.card{ box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); background-color: #fff; }
+
+/* 卡片式圆角 */
+.radius{ border-radius: 10px; }
+.radius-top{ border-top-left-radius: 10px; border-top-right-radius: 10px; }
+.radius-bottom{ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+
+/* 整体页面 */
+.page{ width: 100%; box-sizing: border-box; background-color: #fff; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; }
+
+/* iphoneX 吸底适配 */
+.iphonex_bottom_btn{ bottom: 52px !important; }
+.iphonex_bottom_btn::after{ content: ""; position: absolute; left: 0; bottom: 0; width: 100%; transform: translateY(100%); height: 52px; background: #fff; z-index: 10; }
+.iphonex_bottom_view{ width: 100%; height: 52px; }
+
+/* 滑动出现动画 */
+.slideY{ animation: slide-y 0.5s; }
+@keyframes slide-y {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+/* 球类 */
+.ball{ width: 60px; height: 60px; line-height: 60px; text-align: center; display: inline-block; border-radius: 100%; margin-right: 10px; overflow: hidden; }
+.red-ball{ background-color: #f13131; }
+.blue-ball{ background-color: #1c3bd8; }
+.bj{ width: 40px; height: 40px; line-height: 40px; text-align: center; display: inline-block; border-radius: 2px; margin-right: 10px; overflow: hidden; color: #fff; font-size: 28px; font-weight: bold; }
+.bj-1{ background-color: #FFCC00; }
+.bj-2{ background-color: #0089ff; }
+.bj-3{ background-color: #4d4d4d; }
+.bj-4{ background-color: #ff7300; }
+.bj-5{ background-color: #3399CC; }
+.bj-6{ background-color: #5200ff; }
+.bj-7{ background-color: #bbbbbb; }
+.bj-8{ background-color: #ff0000; }
+.bj-9{ background-color: #760000; }
+.bj-10{ background-color: #28c200; }
+
+.nav-top {width: 100%;padding: 0 20px;height: 80px;border-bottom: 1px solid #eee; }
+.nav-top-l { height: 100%; }
