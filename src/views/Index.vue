@@ -2,7 +2,7 @@
   <div class="page">
     <div class="nav">
       <div class="nav-logo">
-        <img src="http://www.jq22.com/demo/html520160125/images/avatar.jpg" />
+        <img src="../assets/img/top2.png" />
       </div>
       <div class="nav-introduce">
         <h2>林间有-枫</h2>
@@ -21,7 +21,7 @@
     </div>
     <div class="main">
       <div class="main-banner">
-        <img src="http://www.jq22.com/demo/html520160125/images/banner.jpg" alt />
+        <img src="../assets/img/banner.png" alt />
       </div>
       <div class="main-box">
         <div class="main-about">
@@ -83,7 +83,7 @@ export default {
   width: 100%;
   overflow: hidden;
   .nav {
-    width: 350px;
+    width: 280px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -93,7 +93,7 @@ export default {
     text-align: center;
     overflow: hide;
     .nav-logo {
-      padding: 80px 0 30px;
+      padding: 60px 0 30px;
       img {
         width: 170px;
         height: 170px;
@@ -133,7 +133,7 @@ export default {
     }
   }
   .main {
-    padding-left: 350px;
+    padding-left: 280px;
     overflow: hidden;
     .main-banner {
       width: 100%;
