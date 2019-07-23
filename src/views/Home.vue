@@ -5,7 +5,6 @@
       <img src=".././assets/logo.jpg" alt />
     </div>
     <!-- LOGO  end-->
-
     <div class="home-title">林间-枫</div>
     <div class="home-introduce">{{introduceNmae}}</div>
     <div class="home-start" @click="openIndex">开始你的旅行 →</div>
@@ -15,11 +14,12 @@
         <p>{{item.contern}}</p>
       </div>
     </div>
-    <div class="home-foot">来自本人纯属于吹水</div>
+    <!-- <div class="home-foot">来自本人纯属于吹水</div> -->
   </div>
 </template>
 
 <script>
+import utils from '../utils/utils'
 export default {
   data() {
     return {
@@ -48,25 +48,13 @@ export default {
   },
   methods: {
     /** 字体效果 */
-    // startNmae() {
-    //   this.introduceNmae = "";
-    //   var index = 0;
-    //   var introduce = "来自林间-枫的个人博客";
-    //   var clearIn = setInterval(() => {
-    //     this.introduceNmae += introduce.charAt(index);
-    //     if (index++ === introduce.length) {
-    //       clearInterval(clearIn);
-    //     }
-    //   }, 200);
-    // },
+    
     /** 打开首页 */
     openIndex() {
       this.$router.push("/index");
     }
   },
   mounted() {
-    this.startNmae();
-    console.log(this.title);
   }
 };
 </script>

@@ -1,7 +1,9 @@
+*{margin: 0;padding: 0}
 div, button, input{ box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; -webkit-tap-highlight-color: transparent; }
 input{ border: none;background-color: #fff;}
 input:hover{ background-color: #fff; border: none }
 input:focus{ outline: none; }
+a {color:#fff; text-decoration:none; }
 /* flex-布局 */
 .flex{ display: flex; flex-wrap: wrap; }
 .f1{ flex: 1; }
