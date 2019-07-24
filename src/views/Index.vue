@@ -25,7 +25,7 @@
       </div>
       <div class="main-box">
         <div class="main-about">
-          <h1 class="title-h1">你好</h1>
+          <h1 class="title-h1">嗨，你好</h1>
           <div class="title-p">
             <p>来自于某间公司切图仔</p>
             <p>前端工程师</p>
@@ -248,9 +248,6 @@ export default {
             span {
               font-size: 22px;
             }
-            // .icon-text{
-            //     font-size: 24px;
-            // }
           }
         }
       }
