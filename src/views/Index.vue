@@ -6,7 +6,7 @@
       </div>
       <div class="nav-introduce">
         <h2>林间有-枫</h2>
-        <p>Always believe that the good world is about to happen - feng</p>
+        <p>Face a new life every day - feng</p>
       </div>
       <div class="nav-list">
         <div
@@ -48,44 +48,39 @@
             <p>平时遇到一些问题以及总结</p>
           </div>
           <div class="about-content about-problem">
-              <p>平时工作中会很多很多问题</p>
-              <p>要不断的百度所以我要做一下总结....</p>
-              <p>加油</p>
-              <span>开始的问题之旅 →</span>
-              
+            <p>平时工作中会很多很多问题</p>
+            <p>要不断的百度所以我要做一下总结....</p>
+            <p>加油</p>
+            <span>开始问题之旅 →</span>
           </div>
-          
         </div>
-         <div class="main-about">
+        <div class="main-about">
           <div class="title-p">
             <p>联系方式</p>
             <p>方便大家交流</p>
           </div>
-          <div class="about-content about-icon ">
+          <div class="about-content about-icon">
             <p>
-                <i class=" iconfont icon-weixin wx"></i>
-                <span>WeChat：</span>
-                <span class="icon-text">vue9966</span>
+              <i class="iconfont icon-weixin wx"></i>
+              <span>WeChat：</span>
+              <span class="icon-text">vue9966</span>
             </p>
-             <p>
-                <i class="iconfont icon-qq qq"></i>
-                <span>QQ：</span>
-                <span class="icon-text">937982061</span>
+            <p>
+              <i class="iconfont icon-qq qq"></i>
+              <span>QQ：</span>
+              <span class="icon-text">937982061</span>
             </p>
-             <p>
-                <i class="iconfont icon-GitHub"></i>
-                <span>GitHub：</span>
-                <span class="icon-text">vue9966</span>
+            <p>
+              <i class="iconfont icon-GitHub"></i>
+              <span>GitHub：</span>
+              <span class="icon-text">vue9966</span>
             </p>
-             <p>
-                <i class="iconfont icon-youxiang youxiang"></i>
-                <span>邮箱：</span>
-                <span class="icon-text">vue9966@163.com</span>
+            <p>
+              <i class="iconfont icon-youxiang youxiang"></i>
+              <span>Mail：</span>
+              <span class="icon-text">vue9966@163.com</span>
             </p>
-
-              
           </div>
-          
         </div>
       </div>
     </div>
@@ -108,10 +103,37 @@ export default {
     /** 切换列表 */
     tabListItem(id) {
       this.index = id;
+      if (id == 3) {
+        document.body.scrollTop = 900;
+        window.pageYOffset = 900;
+        document.documentElement.scrollTop = 900;
+      } else if (id == 2) {
+        document.body.scrollTop = 500;
+        window.pageYOffset = 500;
+        document.documentElement.scrollTop = 500;
+      } else {
+        document.body.scrollTop = 0;
+        window.pageYOffset = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    },
+    /** 滚动事件 */
+    handleScroll() {
+      var scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      if (scrollTop >= 700) {
+        this.index = 3;
+      } else if (scrollTop >= 500) {
+        this.index = 2;
+      } else {
+        this.index = 1;
+      }
     }
   },
   mounted() {
-    console.log(123);
+    window.addEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -200,32 +222,32 @@ export default {
             line-height: 40px;
           }
         }
-        .about-problem{
-            cursor: pointer;
-            span{
-                display: inline-block;
-                width: 200px;
-                height: 60px;
-                line-height: 60px;
-                color: #fff;
-                background-color: #4acaa8;
-                text-align: center;
-                margin: 20px 0;
-            }
+        .about-problem {
+          cursor: pointer;
+          span {
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            color: #fff;
+            background-color: #4acaa8;
+            text-align: center;
+            margin: 20px 0;
+          }
         }
-        .about-icon{
-            p{
-                i{
-                    font-size: 26px;
-                    margin-right: 10px;
-                }
-                span{
-                    font-size: 22px;
-                }
-                // .icon-text{
-                //     font-size: 24px; 
-                // }
+        .about-icon {
+          p {
+            i {
+              font-size: 26px;
+              margin-right: 10px;
             }
+            span {
+              font-size: 22px;
+            }
+            // .icon-text{
+            //     font-size: 24px;
+            // }
+          }
         }
       }
     }
