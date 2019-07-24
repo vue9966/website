@@ -7,6 +7,5 @@
 
 <style>
 @import './assets/css/base.css';
-@import './assets/icon/iconfont.css'
-
+@import './assets/icon/iconfont.css';
 </style>

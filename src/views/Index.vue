@@ -47,6 +47,44 @@
             <p>问题列表</p>
             <p>平时遇到一些问题以及总结</p>
           </div>
+          <div class="about-content about-problem">
+              <p>平时工作中会很多很多问题</p>
+              <p>要不断的百度所以我要做一下总结....</p>
+              <p>加油</p>
+              <span>开始的问题之旅 →</span>
+              
+          </div>
+          
+        </div>
+         <div class="main-about">
+          <div class="title-p">
+            <p>联系方式</p>
+            <p>方便大家交流</p>
+          </div>
+          <div class="about-content about-icon ">
+            <p>
+                <i class=" iconfont icon-weixin wx"></i>
+                <span>WeChat：</span>
+                <span class="icon-text">vue9966</span>
+            </p>
+             <p>
+                <i class="iconfont icon-qq qq"></i>
+                <span>QQ：</span>
+                <span class="icon-text">937982061</span>
+            </p>
+             <p>
+                <i class="iconfont icon-GitHub"></i>
+                <span>GitHub：</span>
+                <span class="icon-text">vue9966</span>
+            </p>
+             <p>
+                <i class="iconfont icon-youxiang youxiang"></i>
+                <span>邮箱：</span>
+                <span class="icon-text">vue9966@163.com</span>
+            </p>
+
+              
+          </div>
           
         </div>
       </div>
@@ -60,7 +98,7 @@ export default {
     return {
       navList: [
         { id: 1, name: "关于" },
-        { id: 2, name: "列表" },
+        { id: 2, name: "问题" },
         { id: 3, name: "联系" }
       ],
       index: 1
@@ -161,6 +199,33 @@ export default {
           p {
             line-height: 40px;
           }
+        }
+        .about-problem{
+            cursor: pointer;
+            span{
+                display: inline-block;
+                width: 200px;
+                height: 60px;
+                line-height: 60px;
+                color: #fff;
+                background-color: #4acaa8;
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+        .about-icon{
+            p{
+                i{
+                    font-size: 26px;
+                    margin-right: 10px;
+                }
+                span{
+                    font-size: 22px;
+                }
+                // .icon-text{
+                //     font-size: 24px; 
+                // }
+            }
         }
       }
     }
