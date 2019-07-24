@@ -233,6 +233,10 @@ export default {
             background-color: #4acaa8;
             text-align: center;
             margin: 20px 0;
+            border-radius: 5px;
+          }
+          span:hover {
+            background-color: #41a377;
           }
         }
         .about-icon {
