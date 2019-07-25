@@ -31,15 +31,20 @@
             <p>前端工程师</p>
           </div>
 
-          <div class="about-content">
-            <p>1.熟悉HTML , CSS , javascript技术;</p>
-            <p>2.熟悉jQuery , Vue , Bootstrap , MUI , MintUI , Vuex等框架;</p>
-            <p>3.熟悉HTML5 , CSS3 , 新特性,熟悉移动APP的开发模式能够使用媒体查询,响应式布局适配不同的设备;</p>
-            <p>4.熟悉Ajax , json , jsonp , axios可以配合后台端口 , 完成前后台交互;</p>
-            <p>5.熟悉CSS预处理语言less , 能够利用svn进行源代码管理;</p>
-            <p>6.熟悉Session 以及Cookie会话技术;</p>
-            <p>7.熟悉微信小程序开发</p>
-            <p>8.高性能的页面文档流 , 规范 , 工整 , 能够提炼可服用的模块 , 注释清晰;</p>
+          <div class="about-content flex between">
+            <div class="about-content-left">
+              <p>1.熟悉HTML , CSS , javascript技术;</p>
+              <p>2.熟悉jQuery , Vue , Bootstrap , MUI , MintUI , Vuex等框架;</p>
+              <p>3.熟悉HTML5 , CSS3 , 新特性,熟悉移动APP的开发模式能够使用媒体查询,响应式布局适配不同的设备;</p>
+              <p>4.熟悉Ajax , json , jsonp , axios可以配合后台端口 , 完成前后台交互;</p>
+              <p>5.熟悉CSS预处理语言less , 能够利用svn进行源代码管理;</p>
+              <p>6.熟悉Session 以及Cookie会话技术;</p>
+              <p>7.熟悉微信小程序开发</p>
+              <p>8.高性能的页面文档流 , 规范 , 工整 , 能够提炼可服用的模块 , 注释清晰;</p>
+            </div>
+            <div class="about-content-right">
+              <introduce />
+            </div>
           </div>
         </div>
         <div class="main-about">
@@ -59,27 +64,32 @@
             <p>联系方式</p>
             <p>方便大家交流</p>
           </div>
-          <div class="about-content about-icon">
-            <p>
-              <i class="iconfont icon-weixin wx"></i>
-              <span>WeChat：</span>
-              <span class="icon-text">vue9966</span>
-            </p>
-            <p>
-              <i class="iconfont icon-qq qq"></i>
-              <span>QQ：</span>
-              <span class="icon-text">937982061</span>
-            </p>
-            <p>
-              <i class="iconfont icon-GitHub"></i>
-              <span>GitHub：</span>
-              <span class="icon-text">vue9966</span>
-            </p>
-            <p>
-              <i class="iconfont icon-youxiang youxiang"></i>
-              <span>Mail：</span>
-              <span class="icon-text">vue9966@163.com</span>
-            </p>
+          <div class="about-content about-icon flex between fcenter">
+            <div class="about-content-left">
+              <p>
+                <i class="iconfont icon-weixin wx"></i>
+                <span>WeChat：</span>
+                <span class="icon-text">vue9966</span>
+              </p>
+              <p>
+                <i class="iconfont icon-qq qq"></i>
+                <span>QQ：</span>
+                <span class="icon-text">937982061</span>
+              </p>
+              <p>
+                <i class="iconfont icon-GitHub"></i>
+                <span>GitHub：</span>
+                <span class="icon-text">vue9966</span>
+              </p>
+              <p>
+                <i class="iconfont icon-youxiang youxiang"></i>
+                <span>Mail：</span>
+                <span class="icon-text">vue9966@163.com</span>
+              </p>
+            </div>
+            <div class="about-content-right">
+                <steve />
+            </div>
           </div>
         </div>
       </div>
@@ -88,6 +98,8 @@
 </template>
 
 <script>
+import introduce from "../components/introduce/introduce";
+import steve from "../components/steve/steve";
 export default {
   data() {
     return {
@@ -98,6 +110,10 @@ export default {
       ],
       index: 1
     };
+  },
+  components: {
+    introduce,
+    steve
   },
   methods: {
     /** 切换列表 */
@@ -218,8 +234,10 @@ export default {
           color: #888;
           font-size: 18px;
           margin-top: 20px;
-          p {
-            line-height: 40px;
+          .about-content-left {
+            p {
+              line-height: 40px;
+            }
           }
         }
         .about-problem {
